@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 # data to plot
 n_groups = 4
 true_positive = (126, 129, 123, 120)
-true_negative = (4, 1, 7, 10)
+false_negative = (4, 1, 7, 10)
 false_positive = (6, 9, 3, 3)
-false_negative = (124, 121, 127, 127)
+true_negative = (124, 121, 127, 127)
 
 # create plot
 fig, ax = plt.subplots()
@@ -28,20 +28,20 @@ rects1 = plt.bar(index, true_positive, bar_width,
                  color='b',
                  label='True Positive')
  
-rects2 = plt.bar(index + bar_width, true_negative, bar_width,
+rects2 = plt.bar(index + bar_width, false_positive, bar_width,
                  alpha=opacity,
                  color='g',
-                 label='True Negative')
+                 label='False Positive')
 
-rects3 = plt.bar(index + bar_width + bar_width, false_negative, bar_width,
+rects3 = plt.bar(index + bar_width + bar_width, true_negative, bar_width,
                  alpha=opacity,
                  color='r',
-                 label='False Negative')
+                 label='True Negative')
 
-rects4 = plt.bar(index + bar_width + bar_width + bar_width, false_positive, bar_width,
+rects4 = plt.bar(index + bar_width + bar_width + bar_width, false_negative, bar_width,
                  alpha=opacity,
                  color='y',
-                 label='False Positive')
+                 label='False Negative')
 
 plt.xlabel('Algorithms')
 plt.ylabel('Identified')
