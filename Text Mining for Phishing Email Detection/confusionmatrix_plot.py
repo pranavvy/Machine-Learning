@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 # data to plot
 n_groups = 4
 true_positive = (126, 129, 123, 120)
-false_negative = (4, 1, 7, 10)
-false_positive = (6, 9, 3, 3)
+false_positive = (4, 1, 7, 10)
+false_negative = (6, 9, 3, 3)
 true_negative = (124, 121, 127, 127)
 
 # create plot
