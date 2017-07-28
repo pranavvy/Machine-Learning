@@ -67,7 +67,7 @@ train_labels = np.zeros(702)
 train_labels[351:701] = 1
 train_matrix = extract_features(train_dir)
 
-#training SVM and Naive Bayes classifiers
+#training SVM, Ensemble and Naive Bayes classifiers
 model1 = LinearSVC()
 model2 = MultinomialNB()
 model3 = RandomForestClassifier()
